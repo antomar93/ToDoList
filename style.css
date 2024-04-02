@@ -1,0 +1,132 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Utilities */
+.container {
+	margin: 0 auto;
+	max-width: 540px;
+}
+
+/* Body  */
+body {
+	padding: 26px;
+	font-family: Verdana, sans-serif;
+	background-color: rgb(236, 210, 239);
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-bottom: 16px;
+}
+
+h1 {
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+}
+
+/* Panel */
+.panel {
+	padding: 10px;
+	border-radius: 26px;
+	background-color: rgb(200, 129, 218);
+}
+
+/* AddTo*/
+.add-todo {
+	display: flex;
+	gap: 8px;
+	margin-top: 16px;
+}
+
+input {
+	font-family:'Courier New', Courier, monospace ;
+	font-size: 16px;
+	padding: 6px;
+	text-align: center;
+	color: rgb(94, 46, 139);
+	background-color: rgb(229, 245, 241);
+	border-radius: 23px;
+	border: none;
+	flex-grow: 1;
+}
+
+button {
+	cursor: pointer;
+	padding: 6px;
+	border: none;
+	border-radius: 20px;
+	background-color: rgb(182, 245, 198);
+}
+.buttondark{
+	background-color: rgb(130, 80, 134);
+	border-radius: 50px;
+}
+.dark-mode{
+	background-color: #4e244e;
+    color: #000000;
+	border-radius: 50px;
+	
+}
+/* Empty List Message */
+
+.empty-list-message {
+	text-align: center;
+	font-weight: bold;
+    color: rgb(130, 80, 134);
+    font-family:'Gill Sans';
+	font-size: 18px;
+}
+
+.todo-item {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	background-color: rgb(229, 245, 241);
+	margin: 16px 0;
+	border-radius: 16px;
+}
+
+.todo-text {
+	font-family: Lucida Handwriting, sans-serif;
+	padding: 26px;
+}
+
+.todo-check {
+	cursor: pointer;
+	padding: 16px;
+	border-radius: 16px 0 0 16px;
+	background-color:  rgb(182, 245, 198);
+}
+.modal {
+    display: none; 
+    position: fixed; /* Posizionamento fisso rispetto alla finestra del browser */
+    left: 0;
+    top: 0;
+    width: 100%; /* Occupa l'intera larghezza */
+    height: 100%; /* Occupa l'intera altezza */
+    overflow: auto; /* Abilita lo scrolling */
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo scuro leggermente trasparente */
+  }
+
+  .modal-content {
+    background-color: #f9e5fc; /* Sfondo bianco */
+    margin: 15% auto; /* Posiziona al centro verticalmente e orizzontalmente */
+    padding: 3%;
+    border: 1px solid #888;
+	font-family:'Courier New', Courier, monospace;
+	border-radius:20px;
+    width: 30%; /* Larghezza della finestra modale */
+  }
+
+  .add-details-button {
+    float: right ; /* Posiziona il pulsante a destra */
+    padding: 16px; /* Assegna lo stesso padding del todo-check */
+    border-radius:  0 16px 16px 0  ; /* Assegna lo stesso bordo arrotondato del todo-check */
+    background-color: rgb(229, 245, 241); /* Usa lo stesso colore di sfondo del todo-check */
+}

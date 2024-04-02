@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ToDolist | Pusheen</title>
+
+  <!-- Icon -->
+  <link rel="icon" href="icona.gif">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <!--Heading -->
+    <header class="panel">
+      <h1>To 🧶Do | list </h1>
+      <img src="logo.gif" alt="logo" width="150">
+      <div class="dark-mode">
+        <button class="buttondark" id="dark-mode-toggle"><img src="moon.gif" alt="moon" width="40"></button>
+    </div>
+    </header>
+   
+    <!-- Main -->
+    <main>
+      <!-- No activity -->
+      <p class="empty-list-message"></p>
+
+      <!-- List activities -->
+      <ul class="todo-list">
+
+      </ul>
+
+      <!-- panel add activity -->
+      <div class="panel add-todo">
+        <input type="text" placeholder="Add activity">
+        <button class="add-button" title="Purrfect!">
+          <img src="button.gif" alt="button" width="60">
+        </button>
+        <button class="trash-button" title="Meow!">
+          <img src="trash.gif" alt="trash" width="60">
+      </div>
+    </main>
+  </div>
+  
+<!-- Definizione della finestra modale -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" style="float: right; cursor: pointer;">&times;</span>
+    <span>Date:   </span><input type="date" name="date">
+    <br><br> 
+    <span>Notes:    </span><input type="text" name="text">
+    <br> <img src="birdy.gif" width="150">
+  
+    <!-- Meow -->
+    <audio id="clickSound">
+      <source src="meow.mp3" preload="auto">
+    </audio>
+    <!-- Trash -->
+    <audio id="clickSound2">
+      <source src="trash.mp3" preload="auto">
+    </audio>
+     <!-- Trash -->
+     <audio id="clickSound3">
+      <source src="sparkles.mp3" preload="auto">
+    </audio>
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
