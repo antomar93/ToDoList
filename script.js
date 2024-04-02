@@ -107,9 +107,9 @@ function createActivityTemplate(activity, id) {
   return `
    <li class="todo-item">
      <div class="todo-check"><button title="Are you Meowre?">
-       <img src="check.gif" alt="check" width="40"></button></div>
+       <img src="images/check.gif" alt="check" width="40"></button></div>
        <button class="add-details-button" onclick="openModal(${id})"> 
-       <img src="bird.gif" alt="check" width="30"></button>     
+       <img src="images/bird.gif" alt="check" width="30"></button>     
      <div class="todo-details">
        <p class="todo-text">${activity}</p>
       </div>
