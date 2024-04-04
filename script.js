@@ -142,15 +142,26 @@ function saveDetails() {
 function createActivityTemplate(activity, date, notes, id) {
   return `
    <li class="todo-item">
-     <div class="todo-check"><button title="Are you Meowre?">
-       <img src="images/check.gif" alt="check" width="40"></button></div>
-       <button class="add-details-button" onclick="openModal(${id})"> 
-       <img src="images/bird.gif" alt="check" width="30"></button>     
+   <div class="todo-check">
+   <button title="Are you Meowre?">
+     <img src="images/check.gif" alt="check" width="40">
+   </button>
+ </div>
      <div class="todo-details">
        <p class="todo-text">${activity}</p>
-       <p class="todo-date">${date}</p>
-       <p class="todo-notes">${notes}</p>
-      </div>
+     </div>
+     <hr style="height:30px">
+     <div class="details">
+     <p class="todo-date">${date}</p>
+     <p class="todo-notes">${notes}</p>
+     </div>
+     <hr style="height:30px">
+     <div class="todo-actions">
+       <button class="add-details-button" onclick="openModal(${id})" title="add notes"> 
+         <img src="images/bird.gif" alt="check" width="30">
+       </button>
+     
+     </div>
    </li>
    `;
 }

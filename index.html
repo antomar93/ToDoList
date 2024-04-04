@@ -34,10 +34,10 @@
       <!-- panel add activity -->
       <div class="panel add-todo">
         <input type="text" placeholder="Add activity">
-        <button class="add-button" title="Purrfect!">
+        <button class="add-button" title="Purrfect!" style="background-color: rgba(182, 245, 198, 0.726)">
           <img src="images/button.gif" alt="button" width="60">
         </button>
-        <button class="trash-button" title="Meow!">
+        <button class="trash-button" title="Meow!"style="background-color: rgba(182, 245, 198, 0.726)">
           <img src="images/trash.gif" alt="trash" width="60">
         </button>
       </div>
@@ -47,17 +47,19 @@
   <!-- Definizione della finestra modale -->
   <div id="myModal" class="modal">
     <div class="modal-content">
-      <span onclick="closeModal()" style="float: right; cursor: pointer;">&times;</span>
-      <h2>Activity Details</h2>
-      <p><strong>Activity:</strong> <span id="activityName"></span></p>
+      <span onclick="closeModal()" style="float: right; cursor: pointer; font-size: 30px; color:white">&times;</span>
+      <h2 style="font-size: 30px; color:white">Activity Details</h2>
+      <br>
+      <p style="font-size: 20px"><strong>Activity:</strong> <span id="activityName"></span></p>
+      <br>
       <label for="date">Date:</label>
       <input type="date" id="date" name="date">
       <br><br>
       <label for="notes">Notes:</label>
       <textarea id="notes" name="notes" rows="4" cols="30"></textarea>
       <br><br>
-      <button onclick="saveDetails()">Save</button>
       <img src="images/birdy.gif" width="150">
+      <button style="color:white; background-color:rgba(171, 119, 219, 0.562); border-radius:16px; width:66px; font-size:16px" onclick="saveDetails()">Save</button>
     </div>
   </div>
 
