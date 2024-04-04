@@ -20,7 +20,7 @@
       <img src="images/logo.gif" alt="logo" width="150">
       <div class="dark-mode">
         <button class="buttondark" id="dark-mode-toggle"><img src="images/moon.gif" alt="moon" width="40"></button>
-    </div>
+      </div>
     </header>
    
     <!-- Main -->
@@ -29,9 +29,7 @@
       <p class="empty-list-message"></p>
 
       <!-- List activities -->
-      <ul class="todo-list">
-
-      </ul>
+      <ul class="todo-list"></ul>
 
       <!-- panel add activity -->
       <div class="panel add-todo">
@@ -41,31 +39,41 @@
         </button>
         <button class="trash-button" title="Meow!">
           <img src="images/trash.gif" alt="trash" width="60">
+        </button>
       </div>
     </main>
   </div>
   
-<!-- Definizione della finestra modale -->
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span onclick="closeModal()" style="float: right; cursor: pointer;">&times;</span>
-    <span>Date:   </span><input type="date" name="date">
-    <br><br> 
-    <span>Notes:    </span><input type="text" name="text">
-    <br> <img src="images/birdy.gif" width="150">
-  
-    <!-- Meow -->
-    <audio id="clickSound">
-      <source src="sound/meow.mp3" preload="auto">
-    </audio>
-    <!-- Trash -->
-    <audio id="clickSound2">
-      <source src="sound/trash.mp3" preload="auto">
-    </audio>
-     <!-- Trash -->
-     <audio id="clickSound3">
-      <source src="sound/sparkles.mp3" preload="auto">
-    </audio>
+  <!-- Definizione della finestra modale -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal()" style="float: right; cursor: pointer;">&times;</span>
+      <h2>Activity Details</h2>
+      <p><strong>Activity:</strong> <span id="activityName"></span></p>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date">
+      <br><br>
+      <label for="notes">Notes:</label>
+      <textarea id="notes" name="notes" rows="4" cols="30"></textarea>
+      <br><br>
+      <button onclick="saveDetails()">Save</button>
+      <img src="images/birdy.gif" width="150">
+    </div>
+  </div>
+
+  <!-- Meow -->
+  <audio id="clickSound">
+    <source src="sound/meow.mp3" preload="auto">
+  </audio>
+  <!-- Trash -->
+  <audio id="clickSound2">
+    <source src="sound/trash.mp3" preload="auto">
+  </audio>
+  <!-- Trash -->
+  <audio id="clickSound3">
+    <source src="sound/sparkles.mp3" preload="auto">
+  </audio>
+
   <!-- Javascript -->
   <script src="script.js"></script>
 </body>
