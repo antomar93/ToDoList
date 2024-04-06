@@ -18,7 +18,7 @@ body {
 	font-family: Verdana, sans-serif;
 	background-color: rgb(238, 181, 245);
 	background-image: url("images/sfondo.jpg");
-	background-size: 550px;
+	background-size: cover 50px;
 }
 
 header {
