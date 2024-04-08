@@ -181,3 +181,13 @@ padding: 20px;
 	float: right;
 	padding: 15px;
 }
+.linkedin{
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 200;
+    color: rgb(182, 138, 202);
+}
+a{
+    color: rgb(187, 127, 255);
+}

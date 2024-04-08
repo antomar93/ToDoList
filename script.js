@@ -51,7 +51,7 @@ function showContent() {
     });
     makeCheckClickable();
   } else {
-    emptyListMessage.innerText = 'It seems there are no activities, you can sleep ฅᨐฅ ᨐᵉᵒʷ';
+    emptyListMessage.innerText = 'It seems there are no activities, you can sleep ฅᨐฅ';
   }
 }
 
